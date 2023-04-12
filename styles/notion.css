@@ -106,6 +106,7 @@ svg + .notion-page-title-text {
   @apply text-gray-600 dark:text-gray-300;
 }
 
+code[class*=language-],
 pre[class*='language-'] {
   line-height: inherit;
   font-family: 'JetBrains Mono', monospace;
