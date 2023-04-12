@@ -55,7 +55,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sticky-nav-full {
-  @apply border-b border-opacity-50 border-gray-200 dark: border-gray-600 dark:border-opacity-50 cursor-pointer;
+  @apply border-b border-opacity-50 border-gray-200 dark:border-gray-600 dark:border-opacity-50 cursor-pointer;
 }
 
 .sticky-nav:not(.sticky-nav-full) .caret {
@@ -68,7 +68,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sticky-nav-full .nav {
-  @apply text-gray-600 dark: text-gray-300;
+  @apply text-gray-600 dark:text-gray-300;
 }
 
 nav {
@@ -96,7 +96,7 @@ nav {
 
 @media (min-width: 768px) {
   .sticky-nav-full {
-    @apply max-w-full border-b border-opacity-50 border-gray-200 dark: border-gray-600 dark:border-opacity-50;
+    @apply max-w-full border-b border-opacity-50 border-gray-200 dark:border-gray-600 dark:border-opacity-50;
   }
 
   .header-name {
@@ -137,7 +137,7 @@ nav {
 @supports not (backdrop-filter: none) {
   .sticky-nav {
     backdrop-filter: none;
-    @apply bg-day bg-opacity-90 dark: bg-night dark:bg-opacity-90;
+    @apply bg-day bg-opacity-90 dark:bg-night dark:bg-opacity-90;
   }
 }
 
