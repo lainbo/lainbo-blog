@@ -18,22 +18,6 @@ class MyDocument extends Document {
     return (
       <Html lang={config.lang} className={cn(initialColorScheme)}>
         <Head>
-            <>
-              <link
-                rel="preload"
-                href="/fonts/SourceSerif.var.woff2"
-                as="font"
-                type="font/woff2"
-                crossOrigin="anonymous"
-              />
-              <link
-                rel="preload"
-                href="/fonts/SourceSerif-Italic.var.woff2"
-                as="font"
-                type="font/woff2"
-                crossOrigin="anonymous"
-              />
-            </>
           {['zh', 'ja', 'ko'].includes(
             config.lang.slice(0, 2).toLocaleLowerCase()
           ) && (
@@ -66,7 +50,7 @@ class MyDocument extends Document {
               </noscript>
             </>
           )}
-          <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+          <link rel="icon" href="/favicon.png" />
           <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="/feed"></link>
           {config.appearance === 'auto'
             ? (
