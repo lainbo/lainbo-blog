@@ -16,8 +16,6 @@ body::-webkit-scrollbar {
 body {
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
-  font-family: 'Inter', 'HarmonyOS Sans SC', 'HarmonyOS_Regular', system-ui, Segoe UI, Rototo, Helvetica, Arial,
-    sans-serif !important;
 }
 
 body::-webkit-scrollbar-track {
