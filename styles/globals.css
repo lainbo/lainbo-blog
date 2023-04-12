@@ -1,56 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: normal;
-  font-named-instance: 'Regular';
-  src: url('/fonts/IBMPlexSansVar-Roman.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'IBM Plex Sans';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: italic;
-  font-named-instance: 'Italic';
-  src: url('/fonts/IBMPlexSansVar-Italic.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Source Serif';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: normal;
-  font-named-instance: 'Regular';
-  src: url('/fonts/SourceSerif.var.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Source Serif';
-  font-weight: 100 900;
-  font-display: swap;
-  font-style: italic;
-  font-named-instance: 'Italic';
-  src: url('/fonts/SourceSerif-Italic.var.woff2') format('woff2');
-}
+@import url(https://fonts.bunny.net/css?family=inter:400,800);
+@import url(https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css);
 
 html {
   --scrollbarBG: #ffffff00;
   --thumbBG: #b8b8b8;
 }
+
 body::-webkit-scrollbar {
   width: 5px;
 }
+
 body {
   scrollbar-width: thin;
   scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+  font-family: 'Inter', 'HarmonyOS Sans SC', 'HarmonyOS_Regular', system-ui, Segoe UI, Rototo, Helvetica, Arial,
+    sans-serif !important;
 }
+
 body::-webkit-scrollbar-track {
   background: var(--scrollbarBG);
 }
+
 body::-webkit-scrollbar-thumb {
   background-color: var(--thumbBG);
 }
@@ -82,7 +55,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sticky-nav-full {
-  @apply border-b border-opacity-50 border-gray-200 dark:border-gray-600 dark:border-opacity-50 cursor-pointer;
+  @apply border-b border-opacity-50 border-gray-200 dark: border-gray-600 dark:border-opacity-50 cursor-pointer;
 }
 
 .sticky-nav:not(.sticky-nav-full) .caret {
@@ -95,7 +68,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sticky-nav-full .nav {
-  @apply text-gray-600 dark:text-gray-300;
+  @apply text-gray-600 dark: text-gray-300;
 }
 
 nav {
@@ -123,32 +96,40 @@ nav {
 
 @media (min-width: 768px) {
   .sticky-nav-full {
-    @apply max-w-full border-b border-opacity-50 border-gray-200 dark:border-gray-600 dark:border-opacity-50;
+    @apply max-w-full border-b border-opacity-50 border-gray-200 dark: border-gray-600 dark:border-opacity-50;
   }
+
   .header-name {
     display: grid;
   }
+
   .site-title,
   .post-title {
     @apply transition duration-500;
   }
+
   .site-description {
     opacity: 0;
     transition: opacity 0.5s cubic-bezier(0.4, 0, 0, 1);
   }
+
   .sticky-nav-full .site-description {
     @apply opacity-100 transition duration-500;
   }
+
   .post-title {
     @apply opacity-0;
   }
-  .post-title ~ span .site-description {
+
+  .post-title~span .site-description {
     @apply hidden;
   }
+
   .sticky-nav-full .post-title {
     @apply opacity-100;
   }
-  .sticky-nav-full .post-title ~ span .site-title {
+
+  .sticky-nav-full .post-title~span .site-title {
     @apply opacity-0;
   }
 }
@@ -156,7 +137,7 @@ nav {
 @supports not (backdrop-filter: none) {
   .sticky-nav {
     backdrop-filter: none;
-    @apply bg-day bg-opacity-90 dark:bg-night dark:bg-opacity-90;
+    @apply bg-day bg-opacity-90 dark: bg-night dark:bg-opacity-90;
   }
 }
 

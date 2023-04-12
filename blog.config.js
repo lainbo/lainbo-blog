@@ -13,12 +13,12 @@ const BLOG = {
   path: '', // leave this empty unless you want to deploy Nobelium in a folder
   since: 2019, // If leave this empty, current year will be used.
   postsPerPage: 10,
-  sortByDate: false,
+  sortByDate: true,
   showAbout: false,
   showArchive: true,
-  autoCollapsedNavBar: false, // The automatically collapsed navigation bar
+  autoCollapsedNavBar: true, // The automatically collapsed navigation bar
   ogImageGenerateURL: 'https://og-image-craigary.vercel.app', // The link to generate OG image, don't end with a slash
-  socialLink: 'https://twitter.com/craigaryhart',
+  socialLink: 'https://github.com/lainbo',
   seo: {
     keywords: ['Blog', 'Website', 'Notion'],
     googleSiteVerification: '' // Remove the value or replace it with your own google site verification code
