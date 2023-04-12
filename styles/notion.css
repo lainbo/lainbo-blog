@@ -108,6 +108,7 @@ svg + .notion-page-title-text {
 
 pre[class*='language-'] {
   line-height: inherit;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .notion-bookmark:hover {
