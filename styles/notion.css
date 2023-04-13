@@ -113,7 +113,7 @@ pre,
 code[class*=language-],
 pre[class*='language-'] {
   line-height: inherit;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: 'JetBrains Mono', 'Cascadia Mono', Menlo, Monaco, Consolas, 'HarmonyOS Sans SC', 'HarmonyOS_Regular', system-ui;
 }
 
 .notion-bookmark:hover {
