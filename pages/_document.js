@@ -24,11 +24,7 @@ class MyDocument extends Document {
           ) && (
             <>
               <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-              <link
-                rel="preconnect"
-                href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css"
-                crossOrigin="anonymous"
-              />
+              <link rel="stylesheet" href="https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css" />
               <link rel="preconnect" href="https://fonts.bunny.net" />
               <link href="https://fonts.bunny.net/css?family=inter:400,800|jetbrains-mono:500" rel="stylesheet" />
             </>
