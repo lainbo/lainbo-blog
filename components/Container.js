@@ -66,7 +66,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
           </>
         )}
       </Head>
-      <div>
+      <div className="wrapper">
         <Header
           navBarTitle={layout === 'blog' ? meta.title : null}
           fullWidth={fullWidth}
