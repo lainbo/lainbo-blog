@@ -2,8 +2,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url(https://fonts.bunny.net/css?family=inter:400,800|jetbrains-mono:500);
-@import url(https://s1.hdslb.com/bfs/static/jinkela/long/font/regular.css);
 
 html {
   --scrollbarBG: #ffffff00;
