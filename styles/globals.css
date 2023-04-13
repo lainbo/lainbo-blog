@@ -6,6 +6,7 @@
 html {
   --scrollbarBG: #ffffff00;
   --thumbBG: #b8b8b8;
+  font-family: 'Inter', 'HarmonyOS Sans SC', 'HarmonyOS_Regular', system-ui, Segoe UI, Rototo, Helvetica, Arial, sans-serif !important;
 }
 
 body::-webkit-scrollbar {
