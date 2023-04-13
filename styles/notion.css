@@ -54,6 +54,7 @@
   @apply text-gray-600 dark:text-gray-300;
   overflow-wrap: break-word;
 }
+
 .notion,
 .notion-text,
 .notion-quote,
@@ -62,6 +63,7 @@
   @apply my-3;
   line-height: var(--no-leading);
 }
+
 .notion-page-link {
   color: inherit;
 }
@@ -70,11 +72,11 @@ svg.notion-page-icon {
   @apply hidden;
 }
 
-svg + .notion-page-title-text {
+svg+.notion-page-title-text {
   @apply border-b-0;
 }
 
-.notion-callout > .notion-page-icon-inline {
+.notion-callout>.notion-page-icon-inline {
   max-width: unset;
   max-height: unset;
   height: var(--no-leading);
@@ -106,6 +108,8 @@ svg + .notion-page-title-text {
   @apply text-gray-600 dark:text-gray-300;
 }
 
+code,
+pre,
 code[class*=language-],
 pre[class*='language-'] {
   line-height: inherit;
@@ -115,51 +119,66 @@ pre[class*='language-'] {
 .notion-bookmark:hover {
   @apply border-blue-400;
 }
+
 .notion-viewport {
   z-index: -10;
 }
+
 .notion-asset-caption {
   @apply text-center;
   @apply text-gray-500 dark:text-gray-400;
 }
+
 .notion-asset-wrapper-tweet iframe {
   @apply bg-day dark:bg-night;
 }
+
 .notion-full-width {
   @apply px-0;
 }
+
 .notion-page {
   @apply w-auto;
   @apply px-0;
 }
+
 .notion-quote {
   padding: 0.2em 0.9em;
 }
+
 .notion-hr {
   border-top-width: 1px;
   border-top-style: solid;
 }
+
 .dark .notion-hr {
   border-top-color: rgba(255, 255, 255, 0.13);
 }
+
 .notion-list {
   width: 100%;
 }
+
 .notion-collection {
   @apply max-w-full;
 }
-.notion-collection > .notion-collection-header {
+
+.notion-collection>.notion-collection-header {
   @apply px-0 !important;
 }
-.notion-collection > .notion-table {
+
+.notion-collection>.notion-table {
   @apply max-w-full !important;
 }
-.notion-collection > .notion-table > .notion-table-view {
+
+.notion-collection>.notion-table>.notion-table-view {
   @apply px-0 !important;
 }
+
 .notion-collection-view-type {
   @apply hidden;
 }
+
 .notion-collection-row {
   @apply hidden;
 }
@@ -180,7 +199,7 @@ pre[class*='language-'] {
   padding-inline-start: 28px;
 }
 
-.notion-list > li {
+.notion-list>li {
   padding-left: 2px;
   padding-right: 2px;
 }
@@ -188,7 +207,8 @@ pre[class*='language-'] {
 /* Every block */
 
 .nobelium-block {
-  @apply my-0.5; /* OVERRIDES */
+  @apply my-0.5;
+  /* OVERRIDES */
 }
 
 .nobelium-block .nobelium-block {
@@ -199,18 +219,19 @@ pre[class*='language-'] {
 
 .nobelium-toggle {
   @apply w-full;
-  @apply py-0; /* OVERRIDES */
+  @apply py-0;
+  /* OVERRIDES */
 }
 
 .nobelium-toggle ::marker {
   content: '';
 }
 
-.nobelium-toggle > summary {
+.nobelium-toggle>summary {
   @apply cursor-pointer flex items-start;
 }
 
-.nobelium-toggle-empty > summary {
+.nobelium-toggle-empty>summary {
   @apply cursor-default;
 }
 
@@ -228,11 +249,11 @@ pre[class*='language-'] {
   transform: rotateZ(90deg);
 }
 
-.nobelium-toggle[open]:not(.nobelium-toggle-empty) > * > .nobelium-toggle-triangle svg {
+.nobelium-toggle[open]:not(.nobelium-toggle-empty)>*>.nobelium-toggle-triangle svg {
   transform: rotateZ(180deg);
 }
 
-.nobelium-toggle-empty > * > .nobelium-toggle-triangle svg {
+.nobelium-toggle-empty>*>.nobelium-toggle-triangle svg {
   @apply opacity-50;
 }
 
@@ -244,10 +265,11 @@ pre[class*='language-'] {
   @apply pl-7 mt-0.5;
 }
 
-.nobelium-toggle-content > * {
-  @apply my-0.5; /* OVERRIDES */
+.nobelium-toggle-content>* {
+  @apply my-0.5;
+  /* OVERRIDES */
 }
 
-.nobelium-toggle-content > :last-child {
+.nobelium-toggle-content> :last-child {
   @apply mb-0;
 }

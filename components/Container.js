@@ -1,3 +1,4 @@
+// 出现过改动
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { useConfig } from '@/lib/config'
@@ -65,10 +66,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
           </>
         )}
       </Head>
-      <div
-        className={`wrapper ${BLOG.font === 'serif' ? 'font-serif' : 'font-sans'
-          }`}
-      >
+      <div>
         <Header
           navBarTitle={layout === 'blog' ? meta.title : null}
           fullWidth={fullWidth}
