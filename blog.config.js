@@ -1,6 +1,6 @@
 // 出现过改动
 const BLOG = {
-  title: 'Jc的小站',
+  title: 'Jason Liang',
   author: 'Lainbo',
   email: 'lainbo@foxmail.com',
   link: 'https://www.lainbo.com',
