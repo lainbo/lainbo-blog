@@ -1,6 +1,7 @@
 // 出现过改动
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import BranchingLines from '@/components/BranchingLines'
 import { useConfig } from '@/lib/config'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
@@ -79,6 +80,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
         </main>
         <Footer fullWidth={fullWidth} />
       </div>
+      <BranchingLines />
     </div>
   )
 }
