@@ -12,7 +12,7 @@ const BranchingLines = () => {
     const r180 = Math.PI;
     const r90 = Math.PI / 2;
     const r15 = Math.PI / 12;
-    const color = '#88888825';
+    const color = '#8888881a';
     const el = canvasRef.current;
     const { random } = Math;
 
@@ -50,7 +50,7 @@ const BranchingLines = () => {
       return [x + dx, y + dy];
     };
 
-    const init = 3;
+    const init = 4;
     const len = 6;
 
     if (el) {
