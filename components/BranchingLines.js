@@ -48,9 +48,10 @@ const BranchingLines = () => {
         if (nx < -100 || nx > size.width + 100 || ny < -100 || ny > size.height + 100)
           return;
 
-        steps.push(() => step(nx, ny, rad1));
-        steps.push(() => step(nx, ny, rad2));
+        if (random() > 0.5) steps.push(() => step(nx, ny, rad1));
+        if (random() > 0.5) steps.push(() => step(nx, ny, rad2));
       };
+
 
       let steps = [];
       let prevSteps = [];
