@@ -6,10 +6,14 @@ import { useConfig } from '@/lib/config'
 import Head from 'next/head'
 import PropTypes from 'prop-types'
 import cn from 'classnames'
+import { useRouter } from 'next/router'
 // import BlogPost from './BlogPost'
+
 
 const Container = ({ children, layout, fullWidth, ...customMeta }) => {
   const BLOG = useConfig()
+  const router = useRouter();
+  const allowedRoutes = ['/', '/about'];
 
   const url = BLOG.path.length ? `${BLOG.link}/${BLOG.path}` : BLOG.link
   const meta = {
@@ -80,7 +84,7 @@ const Container = ({ children, layout, fullWidth, ...customMeta }) => {
         </main>
         <Footer fullWidth={fullWidth} />
       </div>
-      <BranchingLines />
+      {allowedRoutes.includes(router.pathname) && <BranchingLines />}
     </div>
   )
 }
