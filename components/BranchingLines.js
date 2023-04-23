@@ -50,7 +50,7 @@ const BranchingLines = () => {
       return [x + dx, y + dy];
     };
 
-    const init = 4;
+    const init = 3;
     const len = 6;
 
     if (el) {
@@ -78,10 +78,12 @@ const BranchingLines = () => {
         if (nx < -100 || nx > size.width + 100 || ny < -100 || ny > size.height + 100)
           return;
 
-        if (iterations <= init || random() > 0.5)
+        if (iterations <= init || random() > 0.5) {
           steps.push(() => step(nx, ny, rad1));
-        if (iterations <= init || random() > 0.5)
+        }
+        if (iterations <= init || random() > 0.5) {
           steps.push(() => step(nx, ny, rad2));
+        }
       };
 
       let lastTime = performance.now();
@@ -119,8 +121,10 @@ const BranchingLines = () => {
           () => step(0, random() * size.height, 0),
           () => step(size.width, random() * size.height, r180),
         ];
-        if (size.width < 500)
+        if (size.width < 500) {
           steps = steps.slice(0, 2);
+        }
+
         requestAnimationFrame(frame);
       };
 
