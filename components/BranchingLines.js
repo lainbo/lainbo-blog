@@ -103,6 +103,7 @@ const BranchingLines = () => {
         }
         prevSteps.forEach(i => i());
 
+        lastTime = performance.now();
         requestAnimationFrame(frame);
       };
 
