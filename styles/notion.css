@@ -24,6 +24,7 @@
   --notion-purple_background: rgba(244, 240, 247, 0.8);
   --notion-pink_background: rgba(249, 238, 243, 0.8);
   --notion-red_background: rgb(253, 235, 236);
+  --textured-glass-color: #ffffff;
 }
 
 :root.dark {
@@ -48,6 +49,7 @@
   --notion-purple_background: rgb(60, 45, 73);
   --notion-pink_background: rgb(78, 44, 60);
   --notion-red_background: rgb(82, 46, 42);
+  --textured-glass-color: #2a2a2b;
 }
 
 .notion {
