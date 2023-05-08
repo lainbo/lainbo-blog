@@ -1,7 +1,7 @@
 /* NOTION CSS OVERRIDE */
 /* 出现过改动 */
 :root {
-  --no-leading: 2rem;
+  --no-leading: 1.625rem;
 
   /* Notion colors */
 
@@ -274,4 +274,48 @@ pre[class*='language-'] {
 
 .nobelium-toggle-content> :last-child {
   @apply mb-0;
+}
+
+@keyframes slide-enter {
+  0% {
+    transform: translateY(10px);
+    opacity: 0
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 100
+  }
+}
+
+@media (prefers-reduced-motion:no-preference) {
+  .notion-page,
+  .slide-enter-content > * {
+    --enter-stage: 0;
+    --enter-step: 150ms;
+    --enter-initial: 0ms;
+    animation: slide-enter 1s both 1;
+    animation-delay: calc(var(--enter-initial) + var(--enter-stage) * var(--enter-step));
+  }
+
+  .notion-page > *:nth-child(1) { --enter-stage: 1; }
+  .notion-page > *:nth-child(2) { --enter-stage: 2; }
+  .notion-page > *:nth-child(3) { --enter-stage: 3; }
+  .notion-page > *:nth-child(4) { --enter-stage: 4; }
+  .notion-page > *:nth-child(5) { --enter-stage: 5; }
+  .notion-page > *:nth-child(6) { --enter-stage: 6; }
+  .notion-page > *:nth-child(7) { --enter-stage: 7; }
+  .notion-page > *:nth-child(8) { --enter-stage: 8; }
+  .notion-page > *:nth-child(9) { --enter-stage: 9; }
+  .notion-page > *:nth-child(10) { --enter-stage: 10; }
+  .notion-page > *:nth-child(11) { --enter-stage: 11; }
+  .notion-page > *:nth-child(12) { --enter-stage: 12; }
+  .notion-page > *:nth-child(13) { --enter-stage: 13; }
+  .notion-page > *:nth-child(14) { --enter-stage: 14; }
+  .notion-page > *:nth-child(15) { --enter-stage: 15; }
+  .notion-page > *:nth-child(16) { --enter-stage: 16; }
+  .notion-page > *:nth-child(17) { --enter-stage: 17; }
+  .notion-page > *:nth-child(18) { --enter-stage: 18; }
+  .notion-page > *:nth-child(19) { --enter-stage: 19; }
+  .notion-page > *:nth-child(20) { --enter-stage: 20; }
 }
