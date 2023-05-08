@@ -151,3 +151,7 @@ nav {
 .capture-pointer-events * {
   @apply pointer-events-none;
 }
+
+.home_link_wrapper > a {
+  display: block;
+}

@@ -289,8 +289,6 @@ pre[class*='language-'] {
 }
 
 @media (prefers-reduced-motion:no-preference) {
-  [slide-enter],
-  .slide-enter,
   .notion-page > *,
   .home_link_wrapper > * {
     --enter-stage: 0;
@@ -299,45 +297,25 @@ pre[class*='language-'] {
     animation: slide-enter 1s both 1;
     animation-delay: calc(var(--enter-initial) + var(--enter-stage) * var(--enter-step));
   }
-
-  .notion-page > *:nth-child(1),
-  .home_link_wrapper > *:nth-child(1) { --enter-stage: 1; }
-  .notion-page > *:nth-child(2),
-  .home_link_wrapper > *:nth-child(2) { --enter-stage: 2; }
-  .notion-page > *:nth-child(3),
-  .home_link_wrapper > *:nth-child(3) { --enter-stage: 3; }
-  .notion-page > *:nth-child(4),
-  .home_link_wrapper > *:nth-child(4) { --enter-stage: 4; }
-  .notion-page > *:nth-child(5),
-  .home_link_wrapper > *:nth-child(5) { --enter-stage: 5; }
-  .notion-page > *:nth-child(6),
-  .home_link_wrapper > *:nth-child(6) { --enter-stage: 6; }
-  .notion-page > *:nth-child(7),
-  .home_link_wrapper > *:nth-child(7) { --enter-stage: 7; }
-  .notion-page > *:nth-child(8),
-  .home_link_wrapper > *:nth-child(8) { --enter-stage: 8; }
-  .notion-page > *:nth-child(9),
-  .home_link_wrapper > *:nth-child(9) { --enter-stage: 9; }
-  .notion-page > *:nth-child(10),
-  .home_link_wrapper > *:nth-child(10) { --enter-stage: 10; }
-  .notion-page > *:nth-child(11),
-  .home_link_wrapper > *:nth-child(11) { --enter-stage: 11; }
-  .notion-page > *:nth-child(12),
-  .home_link_wrapper > *:nth-child(12) { --enter-stage: 12; }
-  .notion-page > *:nth-child(13),
-  .home_link_wrapper > *:nth-child(13) { --enter-stage: 13; }
-  .notion-page > *:nth-child(14),
-  .home_link_wrapper > *:nth-child(14) { --enter-stage: 14; }
-  .notion-page > *:nth-child(15),
-  .home_link_wrapper > *:nth-child(15) { --enter-stage: 15; }
-  .notion-page > *:nth-child(16),
-  .home_link_wrapper > *:nth-child(16) { --enter-stage: 16; }
-  .notion-page > *:nth-child(17),
-  .home_link_wrapper > *:nth-child(17) { --enter-stage: 17; }
-  .notion-page > *:nth-child(18),
-  .home_link_wrapper > *:nth-child(18) { --enter-stage: 18; }
-  .notion-page > *:nth-child(19),
-  .home_link_wrapper > *:nth-child(19) { --enter-stage: 19; }
-  .notion-page > *:nth-child(20),
-  .home_link_wrapper > *:nth-child(20) { --enter-stage: 20; }
 }
+
+.notion-page > *:nth-child(1), .home_link_wrapper > *:nth-child(1) { --enter-stage: 1; }
+.notion-page > *:nth-child(2), .home_link_wrapper > *:nth-child(2) { --enter-stage: 2; }
+.notion-page > *:nth-child(3), .home_link_wrapper > *:nth-child(3) { --enter-stage: 3; }
+.notion-page > *:nth-child(4), .home_link_wrapper > *:nth-child(4) { --enter-stage: 4; }
+.notion-page > *:nth-child(5), .home_link_wrapper > *:nth-child(5) { --enter-stage: 5; }
+.notion-page > *:nth-child(6), .home_link_wrapper > *:nth-child(6) { --enter-stage: 6; }
+.notion-page > *:nth-child(7), .home_link_wrapper > *:nth-child(7) { --enter-stage: 7; }
+.notion-page > *:nth-child(8), .home_link_wrapper > *:nth-child(8) { --enter-stage: 8; }
+.notion-page > *:nth-child(9), .home_link_wrapper > *:nth-child(9) { --enter-stage: 9; }
+.notion-page > *:nth-child(10), .home_link_wrapper > *:nth-child(10) { --enter-stage: 10; }
+.notion-page > *:nth-child(11), .home_link_wrapper > *:nth-child(11) { --enter-stage: 11; }
+.notion-page > *:nth-child(12), .home_link_wrapper > *:nth-child(12) { --enter-stage: 12; }
+.notion-page > *:nth-child(13), .home_link_wrapper > *:nth-child(13) { --enter-stage: 13; }
+.notion-page > *:nth-child(14), .home_link_wrapper > *:nth-child(14) { --enter-stage: 14; }
+.notion-page > *:nth-child(15), .home_link_wrapper > *:nth-child(15) { --enter-stage: 15; }
+.notion-page > *:nth-child(16), .home_link_wrapper > *:nth-child(16) { --enter-stage: 16; }
+.notion-page > *:nth-child(17), .home_link_wrapper > *:nth-child(17) { --enter-stage: 17; }
+.notion-page > *:nth-child(18), .home_link_wrapper > *:nth-child(18) { --enter-stage: 18; }
+.notion-page > *:nth-child(19), .home_link_wrapper > *:nth-child(19) { --enter-stage: 19; }
+.notion-page > *:nth-child(20), .home_link_wrapper > *:nth-child(20) { --enter-stage: 20; }
