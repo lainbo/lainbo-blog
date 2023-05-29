@@ -294,7 +294,7 @@ pre[class*='language-'] {
     --enter-stage: 0;
     --enter-step: 150ms;
     --enter-initial: 0ms;
-    animation: slide-enter 1s both 1;
+    animation: slide-enter 0.8s both 1;
     animation-delay: calc(var(--enter-initial) + var(--enter-stage) * var(--enter-step));
   }
 }
