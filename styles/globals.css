@@ -59,7 +59,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sticky-nav-full {
-  @apply border-b border-opacity-50 border-gray-200 dark:border-gray-600 dark:border-opacity-50 cursor-pointer;
+  @apply border-b border-opacity-50 border-gray-200 dark:border-gray-600 dark:border-opacity-50 cursor-pointer !rounded-none;
 }
 
 .sticky-nav:not(.sticky-nav-full) .caret {
